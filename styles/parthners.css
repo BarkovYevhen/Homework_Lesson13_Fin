@@ -1,0 +1,187 @@
+.parthners {
+  padding: 0 100px 60px 100px;
+}
+
+.parthners__head {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 17px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: #323264;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.parthners__container {
+  border-radius: 12px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.parthners__card {
+  text-align: center;
+}
+
+.hillel {
+  background-color: #1c4280;
+  border-radius: 12px 0 0 0;
+  padding: 36px 106px;
+}
+
+.wannabiz {
+  background: #143646;
+  padding: 44px 115px;
+}
+
+.tapgerine {
+  background: linear-gradient(0deg, #f48b30, #f48b30), #f48b30;
+  padding: 38px 125px;
+}
+
+.dlook {
+  background: #9e4dc3;
+  border-radius: 0 12px 0 0;
+  padding: 39px 125px;
+}
+
+.orangear {
+  background: #fd9339;
+  padding: 38px 128px;
+}
+
+.adtelligent {
+  background: #e2e2e4;
+  padding: 36px 103px;
+}
+
+.clickky {
+  background: #c71c36;
+  padding: 30px 146px;
+}
+
+.eco-leasing {
+  background: #dcf3f9;
+  padding: 22px 142px;
+}
+
+.infratek {
+  background: #eaeaea;
+  border-radius: 0 0 0 12px;
+  padding: 30px 124px;
+}
+
+.city-park {
+  background: #282240;
+  padding: 41px 124px;
+}
+
+.artprint {
+  background: #1d4568;
+  padding: 37px 120px;
+}
+
+.ultimatecard {
+  background: #000000;
+  border-radius: 0 0 12px 0;
+  padding: 13px 139px;
+}
+
+@media screen and (max-width: 1440px) {
+  .parthners {
+    padding: 0 0 60px 0;
+  }
+  .parthners__container {
+    border-radius: 0%;
+  }
+  .hillel {
+    border-radius: 0%;
+    padding: 36px 71px;
+  }
+  .wannabiz {
+    padding: 44px 80px;
+  }
+  .tapgerine {
+    padding: 38px 90px;
+  }
+  .dlook {
+    border-radius: 0%;
+    padding: 39px 90px;
+  }
+  .orangear {
+    padding: 38px 93px;
+  }
+  .adtelligent {
+    padding: 36px 86px;
+  }
+  .clickky {
+    padding: 30px 111px;
+  }
+  .eco-leasing {
+    padding: 22px 107px;
+  }
+  .infratek {
+    border-radius: 0;
+    padding: 30px 89px;
+  }
+  .city-park {
+    padding: 41px 89px;
+  }
+  .artprint {
+    padding: 37px 85px;
+  }
+  .ultimatecard {
+    border-radius: 0;
+    padding: 13px 104px;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .parthners {
+    padding: 0 0 60px 0;
+  }
+  .parthners__container {
+    border-radius: 0%;
+  }
+  .hillel {
+    border-radius: 0%;
+    padding: 36px 20px;
+  }
+  .wannabiz {
+    padding: 44px 28px;
+  }
+  .tapgerine {
+    padding: 38px 38px;
+  }
+  .dlook {
+    border-radius: 0%;
+    padding: 39px 38px;
+  }
+  .orangear {
+    padding: 38px 41px;
+  }
+  .adtelligent {
+    padding: 36px 61px;
+  }
+  .clickky {
+    padding: 30px 59px;
+  }
+  .eco-leasing {
+    padding: 22px 55px;
+  }
+  .infratek {
+    border-radius: 0;
+    padding: 30px 37px;
+  }
+  .city-park {
+    padding: 41px 37px;
+  }
+  .artprint {
+    padding: 37px 33px;
+  }
+  .ultimatecard {
+    border-radius: 0;
+    padding: 13px 52px;
+  }
+}/*# sourceMappingURL=parthners.css.map */

@@ -1,0 +1,123 @@
+.publications {
+  padding: 30px 160px 0 160px;
+  background: #F5F5FA;
+}
+
+.publications__link {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 17px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: #24a3ff;
+  margin-bottom: 10px;
+}
+
+.publications__head {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 38px;
+  line-height: 46px;
+  background: linear-gradient(90.13deg, #f0145a 0.84%, #ef8080 99.96%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  margin-bottom: 30px;
+}
+
+.publications__cards__container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 30px;
+}
+
+.publications__card {
+    display: grid;
+    grid-template-rows: 2fr 3fr;
+}
+
+.publications__card__img {
+  border-radius: 12px 12px 0 0;
+//   height: 200px;
+}
+
+.publications__card__background1 {
+  background: url(/images/Publications/Publication-1.png);
+  background-position: center;
+  background-size: 100%
+}
+
+.publications__card__background2 {
+  background: url(/images/Publications/Publication-2.png);
+  background-position: center;
+  background-size: 100%
+}
+
+.publications__card__background3 {
+  background: url(/images/Publications/Publication-3.png);
+  background-position: center;
+  background-size: 100%
+}
+
+.publications__card__content {
+  padding: 30px;
+  border-radius: 0 0 12px 12px;
+  background: #FFFFFF;
+//   height: 
+}
+
+.publications__card__head {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+  color: #24a3ff;
+  margin-bottom: 15px;
+}
+
+.publications__card__data {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 15px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: #b3b3ba;
+  margin-bottom: 15px;
+}
+
+.publications__card__line {
+  border: solid 2px #e6e6f0;
+  margin-bottom: 15px;
+}
+
+.publication__card__subs {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 22px;
+  color: #000000;
+}
+
+@media screen and (max-width:1440px) {
+    .publications {
+        padding: 30px 60px 0 60px;
+      }
+      .publications__card__background1 {
+        background-size: cover;
+      }
+      
+      .publications__card__background2 {
+        background-size: cover;
+      }
+      
+      .publications__card__background3 {
+        background-size: cover;
+      }
+}
