@@ -1,20 +1,28 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap"
-      rel="stylesheet">
-    <link rel="stylesheet" href="./homepage.css">
-    <link rel="stylesheet" href="./styles/services.css">
-    <link rel="stylesheet" href="./styles/team.css">
-    <link rel="stylesheet" href="./styles/parthners.css">
-    <link rel="stylesheet" href="./styles/publications.css">
-    <link rel="stylesheet" href="./styles/footer.css">
+      rel="stylesheet"
+    />
+    <link rel="apple-touch-icon" sizes="180x180" href="./images/Favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/Favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./images/Favicon/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <link rel="stylesheet" href="./homepage.css" />
+    <link rel="stylesheet" href="./styles/services.css" />
+    <link rel="stylesheet" href="./styles/team.css" />
+    <link rel="stylesheet" href="./styles/parthners.css" />
+    <link rel="stylesheet" href="./styles/publications.css" />
+    <link rel="stylesheet" href="./styles/footer.css" />
     <title>Homepage</title>
   </head>
   <body>
@@ -35,7 +43,7 @@
             <a class="nav-menu__tel" href="tel:+0800 211 927">0800 211 927</a>
             <span class="point"></span>
             <a href="@"
-              ><img src="./images/Vector_fb-icon.svg" alt="Facebook"
+              ><img class="header__fb-icon" src="./images/Vector_fb-icon.svg" alt="Facebook"
             /></a>
           </div>
           <div class="header__nav-menu__links__container">
@@ -47,82 +55,70 @@
               <li class="nav-menu__link"><a href="">contact</a></li>
             </ul>
           </div>
+       <!-- Burger menu -->
+          <div class="header__burger-menu">
+            <a href="">
+                <img src="./images/Header/Hamburger.svg" alt="MENU">
+            </a>
+          </div>
         </div>
       </header>
-
-      <!-- Main page main information -->
-      <div class="main__container">
-        <div class="main__logo__container">
-          <picture class="main__logo">
-            <source
-              srcset="./images/Logo/Symbolmain1920.png"
-              media="(max-width: 1920px)"
-            />
-            <source
-              srcset="./images/Logo/Symbolmain1440.png"
-              media="(max-width: 1440px)"
-            />
-            <source
-              srcset="./images/Logo/Symbolmain1024.png"
-              media="(max-width: 1024px)"
-            />
-            <source
-              srcset="./images/Logo/Symbolmain768.png"
-              media="(max-width: 768px)"
-            />
-            <source
-              srcset="./images/Logo/Symbolmain375.png"
-              media="(max-width: 375px)"
-            />
-            <img src="./images/Logo/Symbolmain1920.png" alt="main logo" />
-          </picture>
-          <!-- <img src="/images/Symbol_Main_Logo.png" alt="main logo" /> -->
+  <!-- Main page main information -->
+      <div class="main__logo__container">
+        <picture class="main__logo">
+          <source srcset="./images/Logo/Symbolmain1920.png" type="image/png" media="(min-width:1920px)">
+          <source srcset="./images/Logo/Symbolmain1440.png" type="image/png" media="(min-width:1025px)">
+          <source srcset="./images/Logo/Symbolmain1024.png" type="image/png" media="(min-width:769px)">
+          <source srcset="./images/Logo/Symbolmain768.png" type="image/png" media="(min-width:769px)">
+          <source srcset="./images/Logo/Symbolmain375.png" type="image/png" media="(max-width:376px)">
+          <img src="./images/Logo/Symbolmain768.png" alt="main logo" />
+        </picture>
+        <div class="main__name">you legal solutions provider</div>
+        <div class="main__scroll-button">
+          <a href="#">
+            <svg
+              class="Scrollbutton"
+              width="42"
+              height="42"
+              viewBox="0 0 42 42"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <g clip-path="url(#clip0_22728_11339)">
+                <circle
+                  opacity="0.5"
+                  cx="21"
+                  cy="21"
+                  r="20"
+                  stroke="white"
+                  stroke-width="2"
+                />
+                <style>
+                  circle:hover {
+                   stroke: #f0145a;
+                  }
+                </style>
+                <path d="M12 18L21 27L30 18" stroke="white" stroke-width="2" />
+              </g>
+              <defs>
+                <clipPath id="clip0_22728_11339">
+                  <rect width="42" height="42" fill="white" />
+                </clipPath>
+                <style>
+                  path:hover {
+                    stroke: #f0145a;
+                  }
+                </style>
+              </defs>
+            </svg>
+          </a>
         </div>
       </div>
-      <div class="main__name">you legal solutions provider</div>
-      <div class="main__scroll-button">
-        <a href="#">
-          <svg
-            class="Scrollbutton"
-            width="42"
-            height="42"
-            viewBox="0 0 42 42"
-            fill="none"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <g clip-path="url(#clip0_22728_11339)">
-              <circle
-                opacity="0.5"
-                cx="21"
-                cy="21"
-                r="20"
-                stroke="white"
-                stroke-width="2"
-              />
-              <style>
-                circle:hover {
-                  stroke: #f0145a;
-                }
-              </style>
-              <path d="M12 18L21 27L30 18" stroke="white" stroke-width="2" />
-            </g>
-            <defs>
-              <clipPath id="clip0_22728_11339">
-                <rect width="42" height="42" fill="white" />
-              </clipPath>
-              <style>
-                path:hover {
-                  stroke: #f0145a;
-                }
-              </style>
-            </defs>
-          </svg>
-        </a>
-      </div>
+  <!-- Links above main logo -->
       <section class="main-links__container">
         <div class="main-links__links-container">
           <ul class="main-links__list">
-            <li class="main-links__link ">
+            <li class="main-links__link">
               <a href="#" class="main-links__link">Consistent</a>
             </li>
             <li class="main-links__link wide-link">
@@ -132,7 +128,9 @@
               <a href="#" class="main-links__link">Innovative</a>
             </li>
             <li class="main-links__link">
-              <a href="#" class="main-links__link wide-link">Business oriented</a>
+              <a href="#" class="main-links__link wide-link"
+                >Business oriented</a
+              >
             </li>
           </ul>
         </div>
@@ -150,8 +148,7 @@
           </div>
         </div>
       </section>
-
-      <!-- Services page -->
+ <!-- Services page -->
       <section class="services">
         <a href="">Services ></a>
         <h2>What can we do better than others?</h2>
@@ -236,12 +233,19 @@
     <div class="main__underline1"></div>
     <div class="main__underline2"></div>
 
-    <!-- Team page -->
+<!-- Team page -->
     <section class="team">
       <div class="team__container">
         <div class="team__card card-1">
           <div class="team__card-img">
-            <!-- <img src="/images/Team/Team-1main.png" alt="Олександр Олександровський"> -->
+            <!-- <picture class="main__logo">
+              <source srcset="./images/Team/imagedesctopHD.png" type="image/png" media="(min-width:1920px)">
+              <source srcset="./images/Team/imagedesctopSD.png" type="image/png" media="(min-width:1025px)">
+              <source srcset="./images/Team/imagetabletHD.png" type="image/png" media="(min-width:769px)">
+              <source srcset="./images/Team/imagetabletSD.png" type="image/png" media="(min-width:769px)">
+              <source srcset="./images/Team/imagemobile.png" type="image/png" media="(max-width:376px)">
+              <img src="./images/Team/imagetabletHD.png" alt="Олександр Олександровський" />
+            </picture> -->
           </div>
           <div class="team__card-subs">
             <a href="#">команда ></a>
@@ -267,7 +271,7 @@
       </div>
     </section>
 
-    <!-- Parthners page -->
+<!-- Parthners page -->
     <section class="parthners">
       <h5 class="parthners__head">They already trust us</h5>
       <div class="parthners__container">
@@ -278,7 +282,10 @@
           <img src="./images/Parthners/wannabizwannabiz.png" alt="wannabiz" />
         </div>
         <div class="parthners__card tapgerine">
-          <img src="./images/Parthners/tapgerinetapgerine.png" alt="tapgerine" />
+          <img
+            src="./images/Parthners/tapgerinetapgerine.png"
+            alt="tapgerine"
+          />
         </div>
         <div class="parthners__card dlook">
           <img src="./images/Parthners/3dlook3dlook.png" alt="3dlook" />
@@ -319,7 +326,7 @@
       </div>
     </section>
 
-    <!-- Publications page -->
+<!-- Publications page -->
     <section class="publications">
       <div class="publications__container">
         <a href="#" class="publications__link">Publications ></a>
@@ -375,34 +382,31 @@
         </div>
       </div>
     </section>
-
+<!-- Footer page -->
     <footer>
       <div class="footer__container">
-          <div class="footer__menu__container">
-            <p class="footer__menu-adress">Kyiv, Mechnikova str, 14/1</p>
-            <span class="footer__point"></span>
-            <a
-              href="https://goo.gl/maps/6mvQphwsHkAoRznt7"
-              class="footer__menu-map"
-              >on map</a
-            >
-          </div>
-          <div class="footer__menu__container-bottom">
-            <a href="@"
-              ><img
-                class="footer__fb-icon"
-                src="./images/Footer/Facebook-Footer.svg"
-                alt="Facebook"
-            /></a>
-            <span class="point footer__point"></span>
-            <a class="footer-menu__tel" href="tel:+0800 211 927"
-              >0800 211 927</a
-            >
-            <span class="point footer__point"></span>
-            <a class="footer__email" href="mailto: contact@forstudy.space"
-              >contact@forstudy.space</a
-            >
-          </div>
+        <div class="footer__menu__container">
+          <p class="footer__menu-adress">Kyiv, Mechnikova str, 14/1</p>
+          <span class="footer__point"></span>
+          <a
+            href="https://goo.gl/maps/6mvQphwsHkAoRznt7"
+            class="footer__menu-map"
+            >on map</a
+          >
+        </div>
+        <div class="footer__menu__container-bottom">
+          <a href="@"
+            ><img
+              class="footer__fb-icon"
+              src="./images/Footer/Facebook-Footer.svg"
+              alt="Facebook"
+          /></a>
+          <span class="point footer__point"></span>
+          <a class="footer-menu__tel" href="tel:+0800 211 927">0800 211 927</a>
+          <span class="point footer__point"></span>
+          <a class="footer__email" href="mailto: contact@forstudy.space"
+            >contact@forstudy.space</a>
+        </div>
         <div class="footer__copyright">
           <p>© 2021 HLEGAL Law company, LLC</p>
         </div>

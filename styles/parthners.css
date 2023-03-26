@@ -193,4 +193,48 @@
     border-radius: 0%;
     grid-template-columns: repeat(3, 1fr);
   }
+}
+@media screen and (max-width: 376px) {
+  .parthners {
+    padding: 0;
+  }
+  .parthners__container {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .hillel {
+    padding: 36px 79px;
+  }
+  .wannabiz {
+    padding: 44px 88px;
+  }
+  .tapgerine {
+    padding: 38px 98px;
+  }
+  .dlook {
+    padding: 39px 97px;
+  }
+  .orangear {
+    padding: 38px 100px;
+  }
+  .adtelligent {
+    padding: 36px 90px;
+  }
+  .clickky {
+    display: none;
+  }
+  .eco-leasing {
+    display: none;
+  }
+  .infratek {
+    display: none;
+  }
+  .city-park {
+    display: none;
+  }
+  .artprint {
+    display: none;
+  }
+  .ultimatecard {
+    display: none;
+  }
 }/*# sourceMappingURL=parthners.css.map */

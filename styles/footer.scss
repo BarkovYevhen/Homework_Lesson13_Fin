@@ -92,3 +92,32 @@ footer {
     padding: 30px 60px 0;
   }
 }
+
+@media screen and (max-width: 376px) {
+    footer {
+      padding: 30px;
+    }
+    .footer__container {
+        display: flex;
+        flex-wrap: wrap;
+        text-align: center;
+        justify-content: space-around;
+        padding: 30px 0;
+      }
+      .footer__point {
+        display: none;
+      }
+      .footer__menu__container {
+        display: grid;
+        grid-template-rows: 30px 30px;
+        margin-bottom: 15px;
+      }
+      .footer__menu__container-bottom {
+        display: grid;
+        grid-template-rows: 2fr 2fr 1fr;
+        margin-bottom: 30px;
+      }
+      .footer-menu__tel {
+        text-align: center;
+      }
+  }

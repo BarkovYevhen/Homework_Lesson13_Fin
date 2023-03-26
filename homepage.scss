@@ -18,6 +18,9 @@ body {
 
 header {
   padding: 50px 160px 30px;
+  z-index: 2;
+  position: absolute;
+  width: 100%;
 }
 
 main {
@@ -29,8 +32,7 @@ main {
     #643e72 87.46%
   );
   border-radius: 0px 0px 12px 12px;
-  z-index: -2;
-  // background-image: url(/images/Symbolmain_logo.svg);
+  overflow: hidden;
 }
 
 .main__underline1 {
@@ -47,13 +49,9 @@ main {
   border-radius: 0px 0px 12px 12px;
 }
 
-.main__container {
-  padding: 50px 160px 60px;
-}
-
 .header__nav {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr 3fr;
   grid-template-rows: 2fr 1fr;
   z-index: 2;
 }
@@ -73,6 +71,7 @@ main {
   flex-wrap: wrap;
   padding-bottom: 10px;
   z-index: 2;
+  white-space: nowrap;
 }
 
 .nav-menu__lang {
@@ -133,6 +132,9 @@ main {
   justify-content: end;
   z-index: 2;
 }
+.header__burger-menu {
+  display: none;
+}
 
 .header__nav-menu__links {
   display: flex;
@@ -162,23 +164,21 @@ main {
 }
 
 .main__logo {
-  position: absolute;
-  width: 872.34px;
-  height: 1000px;
-  left: calc(50% - 872.34px / 2 + 0.17px);
-  top: 0;
+  max-width: 100%;
 }
 
 .main__logo__container {
-  height: 800px;
+  text-align: center;
+  margin-bottom: 60px;
+  position: relative;
 }
 
 .main__name {
   position: absolute;
-  width: 800px;
+  z-index: 1;
+  width: 100%;
   height: 46px;
-  left: calc(50% - 800px / 2);
-  top: 477px;
+  top: calc(50% - 46px/2);
 
   font-family: "Montserrat";
   font-style: normal;
@@ -191,10 +191,9 @@ main {
 }
 
 .main__scroll-button {
-  // z-index: 1;
   position: absolute;
-  top: 928px;
-  left: calc(50% - 42px / 2);
+  bottom: 30px;
+  left: calc(50% - 21px);
   &:hover {
     stroke: #f0145a;
   }
@@ -217,7 +216,7 @@ main {
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
-  
+  white-space: nowrap;
 }
 
 .main-links__link {
@@ -284,23 +283,6 @@ main {
   header {
     padding: 50px 60px 30px;
   }
-  .main__logo__container {
-    height: 600px;
-  }
-  .main__logo {
-    position: absolute;
-    width: 697px;
-    height: 799px;
-    left: calc(50% - 697px / 2 + 0.5px);
-    top: 0;
-  }
-  .main__name {
-    top: 377px;
-  }
-  .main__scroll-button {
-    top: 728px;
-    left: calc(50% - 42px / 2);
-  }
   .main-links__container {
     padding: 0 180px;
   }
@@ -361,25 +343,6 @@ main {
   .nav-menu__link {
     margin: 0 15px 0 0;
   }
-  .main__logo__container {
-    height: 600px;
-    object-fit: cover;
-  }
-  .main__logo {
-    position: absolute;
-    width: 893.28px;
-    height: 1024px;
-    left: calc(50% - 893.28px / 2 - 0.36px);
-    top: 0;
-    max-width: none;
-  }
-  .main__name {
-    top: 489px;
-  }
-  .main__scroll-button {
-    top: 950px;
-    left: calc(50% - 42px / 2);
-  }
   .main-links__container {
     padding: 0 60px;
     display: flex;
@@ -395,10 +358,12 @@ main {
     display: flex;
     flex-wrap: nowrap;
     flex-direction: row;
+    white-space: nowrap;
     gap: 30px;
   }
   .main-links__link {
   text-align: justify;
+  margin-bottom: 0;
   }
   .main-links__description-container {
     padding-left: 0px;
@@ -408,4 +373,57 @@ main {
   }
   }
   
-
+@media screen and (max-width:376px) {
+  header {
+    padding: 0;
+  }
+  .header__nav {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 2fr 3fr;
+    justify-content: space-between;
+  }
+  .header__nav-menu {
+    grid-row: 1 / 2;
+    grid-column: 1 / span 2;
+    margin-bottom: 0;
+    background: rgba(245, 245, 250, 0.2);
+    height: 45px;
+    padding: 10px 15px;    
+  }
+  .header__nav-menu > span {
+    display: none;
+  }
+  .header__nav-homebutton {
+    grid-row: 2 / 3;
+    grid-column: 1 / 2;
+    justify-content: start;
+    margin: 0;
+    padding: 5px 15px;
+  }
+  .nav-menu__adress {
+    display: none;
+  }
+  .header__fb-icon {
+    display: none;
+  }
+  .header__nav-menu__links__container {
+    display: none;
+  }
+  .nav-menu__tel {
+    flex: 3 1;
+  }
+  .header__burger-menu {
+    display: flex;
+    padding: 12.5px 15px;
+    justify-content: end;
+  }
+  .main__name {
+    padding: 0 30px;
+    display: flex;
+    height: auto;
+    top: calc(50% - 138px/2);
+  }
+  .main-links__container {
+    padding: 0 30px;
+  }
+}
