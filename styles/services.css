@@ -72,4 +72,17 @@
   .services {
     padding: 60px;
   }
+}
+@media screen and (max-width: 1024px) {
+  .services {
+    padding: 60px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .services {
+    padding: 60px;
+  }
+  .services__container {
+    grid-template-columns: repeat(2, 1fr);
+  }
 }/*# sourceMappingURL=services.css.map */

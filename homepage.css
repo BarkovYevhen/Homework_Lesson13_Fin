@@ -15,7 +15,6 @@ li {
 
 body {
   position: relative;
-  overflow: hidden;
 }
 
 header {
@@ -200,10 +199,15 @@ main {
 .main-links__links-container {
   display: flex;
   flex: 1 1;
-  flex-wrap: wrap;
-  flex-direction: column;
+  justify-content: end;
   border-right: solid 2px rgba(255, 255, 255, 0.3);
   padding: 5px 60px 5px 0;
+}
+
+.main-links__list {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
 }
 
 .main-links__link {
@@ -356,6 +360,7 @@ main {
     height: 1024px;
     left: calc(50% - 446.64px - 0.36px);
     top: 0;
+    max-width: none;
   }
   .main__name {
     top: 489px;
@@ -363,5 +368,30 @@ main {
   .main__scroll-button {
     top: 950px;
     left: calc(50% - 21px);
+  }
+  .main-links__container {
+    padding: 0 60px;
+    display: flex;
+    flex-direction: column;
+  }
+  .main-links__links-container {
+    border-right: none;
+    padding: 5px 0px 60px 0;
+    overflow: scroll;
+  }
+  .main-links__list {
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    gap: 30px;
+  }
+  .main-links__link {
+    text-align: justify;
+  }
+  .main-links__description-container {
+    padding-left: 0px;
+    padding-top: 60px;
+    border-left: none;
+    border-top: solid 4px rgba(255, 255, 255, 0.3);
   }
 }/*# sourceMappingURL=homepage.css.map */

@@ -208,3 +208,13 @@
       padding: 13px 52px;
     }
   }
+
+  @media screen and (max-width: 1024px) {
+    .parthners {
+      padding: 0 0 60px 0;
+    }
+    .parthners__container {
+      border-radius: 0%;
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }

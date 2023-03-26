@@ -17,7 +17,6 @@
   background: url(../images/Team/Team-1main.png);
   background-position: center;
   background-size: cover;
-  border-radius: 12px 0px 0px 12px;
 }
 
 .team__card-img img {
@@ -107,7 +106,20 @@ input[name=team__card] {
   }
 }
 @media screen and (max-width: 1024px) {
+  .team {
+    padding: 60px;
+  }
   .team__card {
     grid-template-columns: 45% 55%;
+  }
+}
+@media screen and (max-width: 768px) {
+  .team {
+    padding: 60px;
+  }
+  .team__card {
+    grid-template-columns: none;
+    grid-template-rows: 3fr 2fr;
+    height: 100%;
   }
 }/*# sourceMappingURL=team.css.map */

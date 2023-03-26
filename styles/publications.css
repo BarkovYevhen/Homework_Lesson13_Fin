@@ -1,6 +1,6 @@
 .publications {
-  padding: 30px 160px 0 160px;
-  background: #F5F5FA;
+  padding: 30px 160px;
+  background: #f5f5fa;
 }
 
 .publications__link {
@@ -64,7 +64,7 @@
 .publications__card__content {
   padding: 30px;
   border-radius: 0 0 12px 12px;
-  background: #FFFFFF;
+  background: #ffffff;
 }
 
 .publications__card__head {
@@ -105,7 +105,7 @@
 
 @media screen and (max-width: 1440px) {
   .publications {
-    padding: 30px 60px 0 60px;
+    padding: 30px 60px;
   }
   .publications__card__background1 {
     background-size: cover;
@@ -115,5 +115,38 @@
   }
   .publications__card__background3 {
     background-size: cover;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .publications {
+    padding: 30px 60px;
+  }
+  .publications__card__background1 {
+    background-size: cover;
+  }
+  .publications__card__background2 {
+    background-size: cover;
+  }
+  .publications__card__background3 {
+    background-size: cover;
+  }
+}
+@media screen and (max-width: 768px) {
+  .publications__cards__container {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 60% 40%;
+  }
+  .equity-associate {
+    grid-row: 1/2;
+    grid-column: 1/2;
+  }
+  .penalty {
+    grid-row: 1/2;
+    grid-column: 2/3;
+  }
+  .millennial-testament {
+    grid-row: 2/3;
+    grid-column: 1/span 2;
+    grid-template-rows: 1fr 1fr;
   }
 }/*# sourceMappingURL=publications.css.map */
