@@ -83,9 +83,8 @@ main {
   color: #ffffff;
   padding: 5px 7px;
 }
-
 .nav-menu__lang:hover {
-  background: #f0145a;
+  background: #f5f5fa;
   border-radius: 8px;
 }
 
